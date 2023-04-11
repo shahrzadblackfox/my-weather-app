@@ -36,9 +36,20 @@
     transform: rotate(360deg);
   }
 }
+ul li {
+  list-style-type: none;
+}
 .searchForm {
   text-align: center;
 }
 .weatherInfo {
-  text-align: left;
+  text-align: center;
+}
+
+.sumbit-btn {
+  background-color: green;
+}
+
+.end-note {
+  text-align: center;
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./App.css";
 
 export default function Weather() {
   let [showMessage, setShowMessage] = useState("");
@@ -45,7 +46,7 @@ export default function Weather() {
     <div>
       <form onSubmit={handleSearch}>
         <input type="search" placeholder="Type a City" onChange={updateCity} />
-        <input type="submit" value="Search" />
+        <input type="submit" value="Search" className="sumbit-btn" />
       </form>
 
       <div className="weatherInfo">{showMessage}</div>
