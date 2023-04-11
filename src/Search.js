@@ -28,7 +28,7 @@ export default function Weather() {
             </li>
           ))}
           <img
-            src={`http://openweathermap.org/img/wn/${emoji}@2x.png `}
+            src={`https://openweathermap.org/img/wn/${emoji}@2x.png `}
             alt="{info.name.Description}"
           />
         </ul>
