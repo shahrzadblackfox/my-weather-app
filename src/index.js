@@ -13,6 +13,12 @@ root.render(
     <div className="searchForm">
       <Search />
     </div>
+    <div footer>
+      This project was coded by Shahrzad Amirrahimi and is{" "}
+      <a href="https://github.com/shahrzadblackfox/my-weather-app/tree/master/src">
+        open-sourced{" "}
+      </a>
+    </div>
   </React.StrictMode>
 );
 
