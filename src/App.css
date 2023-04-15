@@ -1,13 +1,33 @@
 .App {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   background-color: #d6e4e5;
   margin-top: 30px;
+  padding: 20px;
+  border-radius: 20px;
 }
 .searchForm {
   margin-top: 20px;
 }
+.form-control {
+  padding: 0;
+}
 .end-note {
   text-align: center;
   font-size: 11px;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+}
+h2 {
+  text-align: left;
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+}
+.heading-title {
+  text-align: center;
 }

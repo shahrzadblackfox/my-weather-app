@@ -1,0 +1,30 @@
+.city-info {
+  margin: 30px 0;
+}
+.city-temp {
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
+.units {
+  position: relative;
+  font-size: 20px;
+  top: -24px;
+}
+.city-name {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+}
+.weather-icon {
+  display: block;
+  margin: 0 auto;
+}
+.time-format {
+  text-align: center;
+}
+.dis-weather {
+  font-size: 20px;
+  font-family: "Pacifico", cursive;
+}

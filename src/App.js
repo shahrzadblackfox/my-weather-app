@@ -6,10 +6,17 @@ function App() {
   return (
     <div className="App ">
       <div className="container">
-        <Weather />
+        <div className="row heading-title">
+          <h1>
+            <i className="fa-solid fa-rainbow" />
+            Weather Forecast
+          </h1>
+        </div>
+
         <div className="searchForm">
           <Search />
         </div>
+        <Weather />
         <br />
       </div>
     </div>

@@ -45,7 +45,7 @@ export default function Weather() {
   return (
     <div>
       <form onSubmit={handleSearch} className="row">
-        <div className="col-9">
+        <div className="col-md-8">
           <input
             className="form-control me-2"
             type="search"
@@ -53,10 +53,17 @@ export default function Weather() {
             onChange={updateCity}
           />
         </div>
-        <div className="col-3">
+        <div className="col-md-2">
           <input
             type="submit"
             value="Search"
+            className="sumbit-btn btn btn-outline-success w-100"
+          />
+        </div>
+        <div className="col-md-2">
+          <input
+            type="submit"
+            value="Current"
             className="sumbit-btn btn btn-outline-success w-100"
           />
         </div>
