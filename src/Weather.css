@@ -6,6 +6,8 @@
   font-weight: 400;
   line-height: 1;
   text-align: center;
+  position: relative;
+  top: 10;
 }
 .units {
   position: relative;
@@ -27,4 +29,10 @@
 .dis-weather {
   font-size: 20px;
   font-family: "Pacifico", cursive;
+}
+.forecast-info {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: aliceblue;
+  border-radius: 5px;
 }

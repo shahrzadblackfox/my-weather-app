@@ -26,6 +26,9 @@ export default function Weather() {
         <div className="col-4">Humidity:</div>
         <div className="col-4">Wind:</div>
       </div>
+      <div className="row forecast-info">
+        <h2>Next 5 day:</h2>
+      </div>
     </div>
   );
 }
