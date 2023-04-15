@@ -1,4 +1,5 @@
 import React from "react";
+import CoolDate from "./CoolDate";
 
 import "./Weather.css";
 export default function Weather() {
@@ -11,7 +12,9 @@ export default function Weather() {
         </div>
         <div className="col-4 ">
           <h4 className="city-name">Tehran</h4>
-          <h4 className="time-format">Time</h4>
+          <h4 className="time-format">
+            <CoolDate date={weatherData.date} />
+          </h4>
         </div>
         <div className="col-4">
           <img

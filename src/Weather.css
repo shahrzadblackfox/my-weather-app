@@ -29,9 +29,10 @@
 .dis-weather {
   font-size: 20px;
   font-family: "Pacifico", cursive;
+  margin-bottom: 20px;
 }
 .forecast-info {
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 5px;
   background-color: aliceblue;
   border-radius: 5px;
