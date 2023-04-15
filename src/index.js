@@ -4,16 +4,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 
-import Search from "./Search";
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
-    <div className="searchForm">
-      <Search />
-    </div>
-    <br />
     <div className="end-note">
       This project was coded by Shahrzad Amirrahimi and is{" "}
       <a href="https://github.com/shahrzadblackfox/my-weather-app/tree/master/src">

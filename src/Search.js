@@ -44,9 +44,22 @@ export default function Weather() {
 
   return (
     <div>
-      <form onSubmit={handleSearch}>
-        <input type="search" placeholder="Type a City" onChange={updateCity} />
-        <input type="submit" value="Search" className="sumbit-btn" />
+      <form onSubmit={handleSearch} className="row">
+        <div className="col-9">
+          <input
+            className="form-control me-2"
+            type="search"
+            placeholder="Type a City"
+            onChange={updateCity}
+          />
+        </div>
+        <div className="col-3">
+          <input
+            type="submit"
+            value="Search"
+            className="sumbit-btn btn btn-outline-success w-100"
+          />
+        </div>
       </form>
 
       <div className="weatherInfo">{showMessage}</div>
