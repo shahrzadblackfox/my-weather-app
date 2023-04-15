@@ -3,6 +3,7 @@ import axios from "axios";
 import "./App.css";
 
 export default function Weather() {
+  const apiKey = "4b44333bbcda5f0o6aaf4bt96ce9c0cd";
   let [showMessage, setShowMessage] = useState("");
   const [city, setCity] = useState("");
   function handleSearch(event) {
@@ -35,7 +36,7 @@ export default function Weather() {
         </ul>
       );
     }
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2dd4a9a3477a790a05f1be4bfcb55931&units=metric`;
+    let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(url).then(showTempe);
   }
   function updateCity(event) {
