@@ -1,6 +1,5 @@
 import "./App.css";
-import Search from "./Search";
-import Weather from "./Weather";
+import WeatherSearch from "./Search";
 
 function App() {
   return (
@@ -14,9 +13,9 @@ function App() {
         </div>
 
         <div className="searchForm">
-          <Search />
+          <WeatherSearch deafultCity="Lisbon" />
         </div>
-        <Weather />
+
         <br />
       </div>
     </div>

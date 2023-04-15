@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
+import Weather from "./Weather";
 import "./Weather.css";
 
-export default function Weather() {
+export default function WeatherSearch(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState(props.deafultCity);
   function handleResponse(response) {
     //console.log(response.data.main.temp);
     setWeatherData({
@@ -22,17 +23,17 @@ export default function Weather() {
     });
   }
 
-  function updateCity(event) {
-    setCity(event.target.value);
-  }
   function search() {
     const apiKey = "4b44333bbcda5f0o6aaf4bt96ce9c0cd";
-    let url = `https://api.shecodes.io/weather/v1/current?query=Tehran&key=${apiKey}&units=metric`;
+    let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(url).then(handleResponse);
   }
   function handleSearch(event) {
     event.preventDefault();
     search();
+  }
+  function updateCity(event) {
+    setCity(event.target.value);
   }
 
   if (weatherData.ready) {
@@ -62,6 +63,7 @@ export default function Weather() {
             />
           </div>
         </form>
+        <Weather data={weatherData} />
       </div>
     );
   } else {
