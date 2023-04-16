@@ -1,6 +1,7 @@
 import React from "react";
 import CoolDate from "./CoolDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTempUnit from "./WeatherTempUnit";
 
 import "./Weather.css";
 export default function Weather(props) {
@@ -8,8 +9,7 @@ export default function Weather(props) {
     <div className="container city-info">
       <div className="row ">
         <div className="col-4 city-temp">
-          <span>{props.data.temperature}</span>
-          <span className="units">°C</span>
+          <WeatherTempUnit celsius={props.data.temperature} />
         </div>
         <div className="col-4 ">
           <h4 className="city-name">{props.data.city}</h4>
