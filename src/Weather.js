@@ -1,5 +1,6 @@
 import React from "react";
 import CoolDate from "./CoolDate";
+import WeatherIcon from "./WeatherIcon";
 
 import "./Weather.css";
 export default function Weather(props) {
@@ -17,12 +18,9 @@ export default function Weather(props) {
           </h4>
         </div>
         <div className="col-4">
-          <img
-            className="weather-icon"
-            alt="wather-icon"
-            id="weather-now"
-            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
-          />
+          <div className="weather-icon">
+            <WeatherIcon code={props.data.icon} size={64} />
+          </div>
         </div>
       </div>
       <div className="row dis-weather">

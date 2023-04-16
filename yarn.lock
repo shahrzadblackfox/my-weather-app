@@ -7489,6 +7489,11 @@ raw-body@2.5.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+react-animated-weather@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/react-animated-weather/-/react-animated-weather-4.0.1.tgz#a9832b84e3a0bb626cd536999a371a1cc5f337e8"
+  integrity sha512-ipEa3yW3rld1UAHAmm7Bltn5BOH3O2B491R0ws51kwFtqQ6fc5KWUiBQ0e4sO/XjoeqCkAN/Y98lWx1qZMR84g==
+
 react-app-polyfill@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-app-polyfill/-/react-app-polyfill-3.0.0.tgz#95221e0a9bd259e5ca6b177c7bb1cb6768f68fd7"
@@ -7618,6 +7623,11 @@ react-scripts@5.0.1:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
+
+react-skycons-extended@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-skycons-extended/-/react-skycons-extended-2.0.1.tgz#6ecd3871059e552bf5a83ad804b23e8a5e342f95"
+  integrity sha512-Wq8V/ZLPqMThL+E0esGguD14GM0oIwtsmwA1+YRtEHmLKKAB85Wo4awkhemdAo/Ab7G/HAfFGyx9J6JEWNimqA==
 
 react@^18.2.0:
   version "18.2.0"
