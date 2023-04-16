@@ -10,7 +10,11 @@ root.render(
     <App />
     <div className="end-note">
       This project was coded by Shahrzad Amirrahimi and is{" "}
-      <a href="https://github.com/shahrzadblackfox/my-weather-app/tree/master/src">
+      <a
+        href="https://github.com/shahrzadblackfox/my-weather-app"
+        target="_blank"
+        rel="noreferrer"
+      >
         open-sourced{" "}
       </a>
     </div>
