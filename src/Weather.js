@@ -28,9 +28,6 @@ export default function Weather(props) {
         <div className="col-4">Humidity:{props.data.humidity}%</div>
         <div className="col-4">Wind: {props.data.wind} km/h</div>
       </div>
-      <div className="row forecast-info">
-        <h2>Next 5 day:</h2>
-      </div>
     </div>
   );
 }

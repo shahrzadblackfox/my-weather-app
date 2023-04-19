@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
 import Weather from "./Weather";
+import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
 
 export default function WeatherSearch(props) {
@@ -63,6 +64,10 @@ export default function WeatherSearch(props) {
           </div>
         </form>
         <Weather data={weatherData} />
+        <div className="row forecast-info">
+          <h2>Next 5 day:</h2>
+          <WeatherForecast coordinates={weatherData.coordinates} />
+        </div>
       </div>
     );
   } else {

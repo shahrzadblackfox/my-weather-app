@@ -38,3 +38,12 @@
   background-color: aliceblue;
   border-radius: 5px;
 }
+
+.waether-forcast {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+}
+
+.forecast-date {
+  font-size: 25px;
+}
