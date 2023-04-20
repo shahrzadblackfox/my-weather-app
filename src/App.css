@@ -31,3 +31,9 @@ p {
 .heading-title {
   text-align: center;
 }
+
+@media (max-width: 767px) {
+  .btn-small-change {
+    margin-top: 6px;
+  }
+}

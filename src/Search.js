@@ -6,6 +6,7 @@ import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
 
 export default function WeatherSearch(props) {
+  const apiKey = "4b44333bbcda5f0o6aaf4bt96ce9c0cd";
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   const [city, setCity] = useState(props.deafultCity);
@@ -24,7 +25,6 @@ export default function WeatherSearch(props) {
   }
 
   function search() {
-    const apiKey = "4b44333bbcda5f0o6aaf4bt96ce9c0cd";
     let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(url).then(handleResponse);
   }
@@ -34,6 +34,16 @@ export default function WeatherSearch(props) {
   }
   function updateCity(event) {
     setCity(event.target.value);
+  }
+  function currentPosition(position) {
+    let long = position.coords.longitude;
+    let lat = position.coords.latitude;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${long}&lat=${lat}&key=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+  function handleCurrent(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(currentPosition);
   }
 
   if (weatherData.ready) {
@@ -52,14 +62,15 @@ export default function WeatherSearch(props) {
             <input
               type="submit"
               value="Search"
-              className="sumbit-btn btn btn-outline-success w-100"
+              className="sumbit-btn btn btn-outline-success w-100 btn-small-change"
             />
           </div>
           <div className="col-md-2">
             <input
               type="submit"
               value="Current"
-              className="sumbit-btn btn btn-outline-success w-100"
+              className="sumbit-btn btn btn-outline-success w-100 btn-small-change"
+              onClick={handleCurrent}
             />
           </div>
         </form>

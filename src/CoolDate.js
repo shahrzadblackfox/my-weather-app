@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function CoolDate(props) {
-  let days = ["sun", "mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let day = days[props.date.getDay()];
   let hours = props.date.getHours();
   if (hours < 10) {
