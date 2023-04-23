@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ForecastDay from "./ForecastDay";
 
 export default function WeatherTempUnit(props) {
   const [unit, setUnit] = useState("celsius");
@@ -23,6 +24,7 @@ export default function WeatherTempUnit(props) {
             °F
           </a>
         </span>
+        <ForecastDay unit="cel" />
       </div>
     );
   } else {
@@ -35,6 +37,7 @@ export default function WeatherTempUnit(props) {
           </a>
           | °F
         </span>
+        <ForecastDay unit="fahren" />
       </div>
     );
   }

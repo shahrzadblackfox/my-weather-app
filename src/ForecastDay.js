@@ -16,19 +16,44 @@ export default function ForecastDay(props) {
     return day;
   }
 
-  return (
-    <div className="waether-forcast">
-      <div className="forecast-date">{showDay()}</div>
+  function fahrenheitMax() {
+    let fMax = Math.round((props.data.temperature.maximum * 9) / 5 + 32);
+    return fMax;
+  }
+  function fahrenheitMin() {
+    let fMin = Math.round((props.data.temperature.minimum * 9) / 5 + 32);
+    return fMin;
+  }
 
-      <div>
-        <WeatherIcon code={props.data.condition.icon} size={43} />
+  if (props.unit === "fahren") {
+    return (
+      <div className="waether-forcast">
+        <div>
+          <WeatherIcon code={props.data.condition.icon} size={43} />
+        </div>
+        <div>
+          <strong>
+            <span>{fahrenheitMax()}</span>
+          </strong>
+          °<span> {fahrenheitMin()}°</span>
+        </div>
       </div>
-      <div>
-        <strong>
-          <span>{showMax()}</span>
-        </strong>
-        °<span> {showMin()}°</span>
+    );
+  } else {
+    return (
+      <div className="waether-forcast">
+        <div className="forecast-date">{showDay()}</div>
+
+        <div>
+          <WeatherIcon code={props.data.condition.icon} size={43} />
+        </div>
+        <div>
+          <strong>
+            <span>{showMax()}</span>
+          </strong>
+          °<span> {showMin()}°</span>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
